@@ -18,9 +18,9 @@
 "item.economyinc.item_packetten":"Packets of Ten dollars",
 "item.economyinc.item_packettwenty":"Packets of Twenty dollars",
 "item.economyinc.item_packetfifty":"Packets of Fifty dollars",
-"item.economyinc.item_packethundreed":"Packets of Hundreed dollars",
-"item.economyinc.item_packettwohundreed":"Packets of Two hundreed dollars",
-"item.economyinc.item_packetfivehundreed":"Packets of Five hundreed dollars",
+"item.economyinc.item_packethundreed":"Packets of One hundred dollars",
+"item.economyinc.item_packettwohundreed":"Packets of Two hundred dollars",
+"item.economyinc.item_packetfivehundreed":"Packets of Five hundred dollars",
 "item.economyinc.item_vault_cracker": "Digital vault cracker",
 
 "block.economyinc.block_vault":"Personal Vault",
