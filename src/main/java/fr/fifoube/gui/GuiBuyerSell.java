@@ -76,7 +76,7 @@ public class GuiBuyerSell extends Screen
         FontRenderer font = Minecraft.getInstance().fontRenderer;
 		this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.seller") + tile.getOwnerName(), (this.width / 2) - 120, (this.height / 2)- 55, Color.BLACK.getRGB());
 		this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.item") + tile.getItemStackToBuy().getDisplayName().getString(), (this.width / 2) - 120, (this.height / 2)- 45, Color.BLACK.getRGB());
-		this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.cost") + tile.getCost(), (this.width / 2) - 120, (this.height / 2)- 35, Color.BLACK.getRGB());
+		this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.cost") + String.format("$%,.2f", tile.getCost()), (this.width / 2) - 120, (this.height / 2)- 35, Color.BLACK.getRGB());
 		super.render(matrixStack, mouseX, mouseY, partialTicks);
         drawImageInGui();
 

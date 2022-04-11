@@ -115,7 +115,7 @@ public class GuiCreditCard extends Screen {
         InventoryScreen.drawEntityOnScreen(this.guiLeft + 25, this.guiTop + 58, 25, (float)(this.guiLeft + 51) - mouseX, (float)(this.guiTop + 75 - 50) - mouseY, this.getMinecraft().player);
 		super.render(matrixStack, mouseX, mouseY, partialTicks);
 		this.font.drawString(matrixStack, I18n.format("title.ownerCard")+ ": " + name, (this.width / 2) - 75, (this.height / 2)- 55, Color.DARK_GRAY.getRGB());
-		this.font.drawString(matrixStack, I18n.format("title.fundsCard")+ ": " + String.valueOf(funds_s), (this.width / 2) - 75, (this.height / 2)- 45, Color.DARK_GRAY.getRGB());
+		this.font.drawString(matrixStack, I18n.format("title.fundsCard")+ ": " + String.format("$%,.2f", funds_s), (this.width / 2) - 75, (this.height / 2)- 45, Color.DARK_GRAY.getRGB());
 
 	}
 	

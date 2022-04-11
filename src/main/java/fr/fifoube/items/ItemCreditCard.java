@@ -123,7 +123,7 @@ public class ItemCreditCard extends Item{
 			 
 		        String ownerName = stack.getTag().getString("Owner");		      
 		        tooltip.add(new StringTextComponent(I18n.format("title.ownerCard") + " : " + ownerName));
-		        tooltip.add(new StringTextComponent(I18n.format("title.fundsCard") + " : " + String.valueOf(funds)));
+		        tooltip.add(new StringTextComponent(I18n.format("title.fundsCard") + " : " + String.format("$%,.2f", funds)));
 		        tooltip.add(new StringTextComponent(I18n.format("title.linkdCard") + " : " + linkedValue));
 	 		 
 	 	 });
