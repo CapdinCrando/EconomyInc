@@ -191,11 +191,11 @@ public class GuiSellerBuy extends Screen
 	        this.blit(matrixStack, i, j, 0, 0, this.xSize, this.ySize);
 			this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.seller") + owner, (this.width / 2) - 120, (this.height / 2)- 55, Color.BLACK.getRGB());
 			this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.item") + itemName, (this.width / 2) - 120, (this.height / 2)- 45, Color.BLACK.getRGB());
-			this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.cost") + cost, (this.width / 2) - 120, (this.height / 2)- 35, Color.BLACK.getRGB());
+			this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.cost") + String.format("$%,.2f", cost), (this.width / 2) - 120, (this.height / 2)- 35, Color.BLACK.getRGB());
 			this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.amount") + amount, (this.width / 2) - 120, (this.height / 2)- 25, Color.BLACK.getRGB());
 			if(sellerOwnerUUID.equals(worldPlayerUUID))
 			{
-				this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.fundsToRecover") + fundsTotalRecovery, (this.width / 2) - 120, (this.height / 2)- 15, Color.BLACK.getRGB());
+				this.font.drawString(matrixStack, TextFormatting.BOLD + I18n.format("title.fundsToRecover") + String.format("$%,.2f", fundsTotalRecovery), (this.width / 2) - 120, (this.height / 2)- 15, Color.BLACK.getRGB());
 			}
 
 			
